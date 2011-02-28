@@ -22,4 +22,4 @@ Set the `AWS_CREDENTIALS_FILE` environment variable to a file containing your ke
 ## Send Statistics & Quota 
 
     rake ses:info:quota        # Display send rates
-    rake ses:info:statistics   # Display send statistics for the past 2 weeks
+    rake ses:info:stats        # Display send statistics for the past 2 weeks

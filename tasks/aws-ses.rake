@@ -48,7 +48,7 @@ namespace :ses do
     end
 
     desc "Display send statistics for the past 2 weeks"
-    task :statistics => :login do            
+    task :stats => :login do            
       frmt = "%-24s%-24s%-8s%-8s%-16s\n"      
       columns = %w{Timestamp DeliveryAttempts Rejects Bounces Complaints}
       sort_by = columns.first
@@ -91,4 +91,4 @@ namespace :ses do
   end
 end
 
-task :default => "ses:info:statistics"
+task :default => "ses:info:stats"
