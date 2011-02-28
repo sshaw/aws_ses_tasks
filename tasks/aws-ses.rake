@@ -11,7 +11,7 @@ def print_columns(columns, data, frmt)
   [data].flatten.each { |d| printf frmt, *d.values_at(*columns) }
 end
 
-namespace :ses do 
+namespace :ses do   
   task :login do 
     key = ENV["AWS_ACCESS_KEY_ID"]
     secret = ENV["AWS_SECRET_ACCESS_KEY"]
@@ -90,3 +90,5 @@ namespace :ses do
     end
   end
 end
+
+task :default => "ses:info:statistics"
