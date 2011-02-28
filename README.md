@@ -8,6 +8,8 @@ Before you can use these tasks you must setup your access keys. This can be done
 
 Set the `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variables to the corresponding keys
 
+**or**
+
 Set the `AWS_CREDENTIALS_FILE` environment variable to a file containing your keys in the following format:  
 
     AWSAccessKeyId=YourKeyId
